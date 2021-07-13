@@ -46,6 +46,6 @@ class Url extends Action_Field_Abstract {
 	}
 
 	public static function get_type() {
-		return 'text';
+		return static::FIELD_TYPE_TEXT;
 	}
 }
