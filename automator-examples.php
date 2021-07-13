@@ -6,7 +6,6 @@
  * Author URI: https://thrivethemes.com
  * Version: 1.0
  * Author: <a href="https://thrivethemes.com">Thrive Themes</a>
- * Requires at least
  */
 
 /**
