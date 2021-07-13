@@ -1,0 +1,9 @@
+{
+    "name": "thrivethemes/thrive-automator-examples",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "AutomatorExamples\\": "src/"
+        }
+    }
+}
