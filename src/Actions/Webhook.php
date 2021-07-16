@@ -20,12 +20,16 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @package AutomatorExamples\Actions
  */
 class Webhook extends Action_Abstract {
+
+
 	/**
 	 * Unique app identifier
 	 *
-	 * @var string
+	 * @return string
 	 */
-	protected static $app_id = 'thrive-automator-docs/webhook';
+	public static function get_id() {
+		return 'thrive-automator-docs/webhook';
+	}
 
 	/**
 	 * Array of action-field keys, required for the action to be setup:
@@ -33,35 +37,54 @@ class Webhook extends Action_Abstract {
 	 *
 	 * @var string[]
 	 */
-	static protected $fields = [ 'webhook_url' ];
+	public static function get_fields() {
+		return [ 'webhook_url' ];
+	}
 
 	/**
 	 * Thumbnail for action
 	 *
 	 * @var string
 	 */
-	static protected $image = 'https://picsum.photos/96';
+	public static function get_image() {
+		return 'https://picsum.photos/96';
+	}
 
 	/**
 	 * Action name
 	 *
 	 * @var string
 	 */
-	static protected $name = 'Webhook request';
+	public static function get_name() {
+		return 'Webhook request';
+	}
 
 	/**
 	 * Name of the action provider
 	 *
 	 * @var string
 	 */
-	static protected $app_name = 'Thrive automator docs';
+	public static function get_app_name() {
+		return 'Thrive automator docs';
+	}
+
+	/**
+	 * Action description
+	 *
+	 * @return string
+	 */
+	public static function get_description() {
+		return __( 'Issue a POST request to a user-supplied endpoint URL' );
+	}
 
 	/**
 	 * Array of data-object keys required in order to run the action
 	 *
 	 * User data is required - this will POSTed via the webhook request
 	 */
-	static protected $requires = [ 'user_data' ];
+	public static function get_required_data_keys() {
+		return [ 'user_data' ];
+	}
 
 	/**
 	 * Actual action handler

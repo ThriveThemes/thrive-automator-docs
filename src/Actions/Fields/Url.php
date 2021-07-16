@@ -24,22 +24,30 @@ class Url extends Action_Field_Abstract {
 	/**
 	 * Field name/label
 	 */
-	static protected $name = 'URL';
+	public static function get_name() {
+		return 'URL';
+	}
 
 	/**
 	 * Field description
 	 */
-	static protected $description = 'The webhook URL where we should send the request';
+	public static function get_description() {
+		return 'The webhook URL where we should send the request';
+	}
 
 	/**
 	 * Field tooltip
 	 */
-	static protected $tooltip = 'Webhook URL';
+	public static function get_tooltip() {
+		return 'Webhook URL';
+	}
 
 	/**
 	 * Field input placeholder
 	 */
-	static protected $placeholder = 'Enter the webhook URL';
+	public static function get_placeholder() {
+		return 'Enter the webhook URL';
+	}
 
 	public static function get_id() {
 		return 'webhook_url';
