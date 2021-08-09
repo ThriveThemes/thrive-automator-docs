@@ -1,8 +1,8 @@
 <?php
 
-namespace AutomatorExamples\Actions;
+namespace AutomatorExamples\Actions\General;
 
-use Thrive\Automator\Items\Action_Abstract;
+use Thrive\Automator\Items\Action;
 use Thrive\Automator\Items\User_Data;
 
 /**
@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @package AutomatorExamples\Actions
  */
-class Webhook extends Action_Abstract {
+class Webhook extends Action {
 
 
 	/**
@@ -35,16 +35,16 @@ class Webhook extends Action_Abstract {
 	 * Array of action-field keys, required for the action to be setup:
 	 *  - URL where to send the request
 	 *
-	 * @var string[]
+	 * @return string[]
 	 */
-	public static function get_fields() {
+	public static function required_action_fields() {
 		return [ 'webhook_url' ];
 	}
 
 	/**
 	 * Thumbnail for action
 	 *
-	 * @var string
+	 * @return string
 	 */
 	public static function get_image() {
 		return 'https://picsum.photos/96';
@@ -53,7 +53,7 @@ class Webhook extends Action_Abstract {
 	/**
 	 * Action name
 	 *
-	 * @var string
+	 * @return string
 	 */
 	public static function get_name() {
 		return 'Webhook request';
@@ -62,7 +62,7 @@ class Webhook extends Action_Abstract {
 	/**
 	 * Name of the action provider
 	 *
-	 * @var string
+	 * @return string
 	 */
 	public static function get_app_name() {
 		return 'Thrive automator docs';
@@ -94,7 +94,7 @@ class Webhook extends Action_Abstract {
 	public function do_action( $data ) {
 		/** @var User_Data $user_data */
 		$user_data   = $data['user_data'] ?? null;
-		$webhook_url = $this->get_data( 'webhook_url' )['value'] ?? null;
+		$webhook_url = $this->get_automation_data( 'webhook_url' )['value'] ?? null;
 		if ( $user_data && $webhook_url ) {
 			$args = [
 				'headers' => [

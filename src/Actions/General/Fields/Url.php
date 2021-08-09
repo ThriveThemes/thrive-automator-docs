@@ -1,9 +1,8 @@
 <?php
 
-namespace AutomatorExamples\Actions\Fields;
+namespace AutomatorExamples\Actions\General\Fields;
 
-use Thrive\Automator\Items\Action_Field_Abstract;
-use Thrive\Automator\Items\Field_Abstract;
+use Thrive\Automator\Items\Action_Field;
 
 /**
  * Thrive Themes - https://thrivethemes.com
@@ -19,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * @package AutomatorExamples\Fields
  */
-class Url extends Action_Field_Abstract {
+class Url extends Action_Field {
 
 	/**
 	 * Field name/label
