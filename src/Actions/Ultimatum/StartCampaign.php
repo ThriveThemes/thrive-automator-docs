@@ -40,7 +40,7 @@ class StartCampaign extends \Thrive\Automator\Items\Action {
 	 *
 	 * @return array
 	 */
-	public static function required_action_fields() {
+	public static function get_required_action_fields() {
 		return [ 'ultimatum/campaign_id' ];
 	}
 
@@ -49,7 +49,7 @@ class StartCampaign extends \Thrive\Automator\Items\Action {
 	 *
 	 * @return array
 	 */
-	public static function get_required_data_keys() {
+	public static function get_required_data_objects() {
 		return [];
 	}
 

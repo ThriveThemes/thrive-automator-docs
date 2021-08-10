@@ -37,7 +37,7 @@ class Webhook extends Action {
 	 *
 	 * @return string[]
 	 */
-	public static function required_action_fields() {
+	public static function get_required_action_fields() {
 		return [ 'webhook_url' ];
 	}
 
@@ -82,7 +82,7 @@ class Webhook extends Action {
 	 *
 	 * User data is required - this will POSTed via the webhook request
 	 */
-	public static function get_required_data_keys() {
+	public static function get_required_data_objects() {
 		return [ 'user_data' ];
 	}
 

@@ -24,7 +24,7 @@ class WooProductStock extends Data_Field {
 	 * Array of filters that are supported by the field
 	 * @return array
 	 */
-	public static function get_filters() {
+	public static function get_supported_filters() {
 		return [ 'number_comparison' ];
 	}
 

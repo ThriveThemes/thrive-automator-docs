@@ -23,11 +23,11 @@ class Stock extends Trigger {
 		return 'woocommerce_updated_product_stock';
 	}
 
-	public static function get_provided_params() {
+	public static function get_provided_data_objects() {
 		return [ 'woo_product_data' ];
 	}
 
-	public static function get_number_hook_params() {
+	public static function get_hook_params_number() {
 		return 1;
 	}
 
