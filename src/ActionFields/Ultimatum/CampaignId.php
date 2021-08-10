@@ -1,6 +1,6 @@
 <?php
 
-namespace AutomatorExamples\Actions\Ultimatum\Fields;
+namespace AutomatorExamples\ActionFields\Ultimatum;
 
 use Thrive\Automator\Items\Action_Field;
 

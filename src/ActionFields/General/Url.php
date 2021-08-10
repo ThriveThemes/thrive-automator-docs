@@ -1,6 +1,6 @@
 <?php
 
-namespace AutomatorExamples\Actions\General\Fields;
+namespace AutomatorExamples\ActionFields\General;
 
 use Thrive\Automator\Items\Action_Field;
 
