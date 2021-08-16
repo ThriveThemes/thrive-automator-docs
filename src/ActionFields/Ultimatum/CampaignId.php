@@ -3,6 +3,7 @@
 namespace AutomatorExamples\ActionFields\Ultimatum;
 
 use Thrive\Automator\Items\Action_Field;
+use Thrive\Automator\Utils;
 
 /**
  * Thrive Themes - https://thrivethemes.com
@@ -36,7 +37,7 @@ class CampaignId extends Action_Field {
 	 * Campaigns will be displayed in a dropdown select
 	 */
 	public static function get_type() {
-		return self::FIELD_TYPE_SELECT;
+		return Utils::FIELD_TYPE_SELECT;
 	}
 
 	/**

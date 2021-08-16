@@ -3,6 +3,7 @@
 namespace AutomatorExamples\ActionFields\General;
 
 use Thrive\Automator\Items\Action_Field;
+use Thrive\Automator\Utils;
 
 /**
  * Thrive Themes - https://thrivethemes.com
@@ -53,6 +54,6 @@ class Url extends Action_Field {
 	}
 
 	public static function get_type() {
-		return static::FIELD_TYPE_TEXT;
+		return Utils::FIELD_TYPE_TEXT;
 	}
 }
