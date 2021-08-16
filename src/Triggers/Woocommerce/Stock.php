@@ -44,7 +44,7 @@ class Stock extends Trigger {
 	}
 
 	public static function get_image() {
-		return 'https://i.pravatar.cc/240';
+		return 'https://thrivethemes.com/wp-content/uploads/2021/08/logo-icon.png';
 	}
 }
 

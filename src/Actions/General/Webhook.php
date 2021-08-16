@@ -47,7 +47,7 @@ class Webhook extends Action {
 	 * @return string
 	 */
 	public static function get_image() {
-		return 'https://picsum.photos/96';
+		return 'https://thrivethemes.com/wp-content/uploads/2021/08/logo-icon.png';
 	}
 
 	/**

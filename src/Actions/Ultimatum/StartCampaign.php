@@ -20,7 +20,7 @@ class StartCampaign extends \Thrive\Automator\Items\Action {
 	}
 
 	public static function get_name() {
-		return 'Start Thrive Ultimatum campaign.';
+		return 'Change campaign status into running';
 	}
 
 	public static function get_description() {
@@ -28,7 +28,7 @@ class StartCampaign extends \Thrive\Automator\Items\Action {
 	}
 
 	public static function get_image() {
-		return 'https://source.unsplash.com/user/cool/32x32';
+		return 'https://thrivethemes.com/wp-content/uploads/2021/08/logo-icon.png';
 	}
 
 	public static function get_app_name() {
