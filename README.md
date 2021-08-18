@@ -7,5 +7,5 @@ and functional in this repository.
 ### How to use
 - install the plugin in a WordPress environment
 ### Documentation
-Navigate to the https://github.com/ThriveThemes/thrive-automator-docs/wiki section to see detailed articles on how to integrate with Thrive Automator 
+Navigate to the [WIKI](https://github.com/ThriveThemes/thrive-automator-docs/wiki) section to see detailed articles on how to integrate with Thrive Automator 
 
