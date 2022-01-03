@@ -56,7 +56,7 @@ class StartCampaign extends \Thrive\Automator\Items\Action {
 	/**
 	 * To implement actual action operation
 	 */
-	public function do_action( $data ) {
+	public function do_action() {
 		$campaign_id = $this->get_automation_data_value( 'ultimatum/campaign_id' );
 
 		if ( function_exists( 'tve_ult_save_campaign_status' ) ) {
