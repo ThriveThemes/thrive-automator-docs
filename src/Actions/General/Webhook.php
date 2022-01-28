@@ -89,12 +89,12 @@ class Webhook extends Action {
 	/**
 	 * Actual action handler
 	 */
-	public function do_action() {
+	public function do_action( $data ) {
 		global $automation_data;
-		if ( empty( $automation_data->get('user_data') ) ) {
+		if ( empty( $automation_data->get( 'user_data' ) ) ) {
 			return false;
 		}
-		$user_data   = $automation_data->get('user_data') ?? null;
+		$user_data   = $automation_data->get( 'user_data' ) ?? null;
 		$webhook_url = $this->get_automation_data( 'webhook_url' )['value'] ?? null;
 		if ( $user_data && $webhook_url ) {
 			$args = [
