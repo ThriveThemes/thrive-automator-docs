@@ -42,6 +42,7 @@ class CampaignId extends Action_Field {
 
 	/**
 	 * It's mandatory for the user to select this field
+	 *
 	 * @return array
 	 */
 	public static function get_validators() {
@@ -50,6 +51,7 @@ class CampaignId extends Action_Field {
 
 	/**
 	 * Values for this field are retrieved with ajax
+	 *
 	 * @return bool
 	 */
 	public static function is_ajax_field() {
@@ -58,9 +60,10 @@ class CampaignId extends Action_Field {
 
 	/**
 	 * Function that returns an array with campaigns (id/name) that will be used in the select
+	 *
 	 * @return array|array[]
 	 */
-	public static function get_options_callback() {
+	public static function get_options_callback( $action_id, $action_data ) {
 		$campaigns = \tve_ult_get_campaigns( [
 			'meta_query'   => [
 				'key'   => \TVE_Ult_Const::META_NAME_FOR_STATUS,
