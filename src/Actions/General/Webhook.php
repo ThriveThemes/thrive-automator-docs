@@ -2,8 +2,9 @@
 
 namespace AutomatorExamples\Actions\General;
 
+
+use AutomatorExamples\Apps\Example_App;
 use Thrive\Automator\Items\Action;
-use Thrive\Automator\Items\User_Data;
 
 /**
  * Thrive Themes - https://thrivethemes.com
@@ -64,8 +65,8 @@ class Webhook extends Action {
 	 *
 	 * @return string
 	 */
-	public static function get_app_name() {
-		return 'Thrive automator docs';
+	public static function get_app_id() {
+		return Example_App::get_id();
 	}
 
 	/**

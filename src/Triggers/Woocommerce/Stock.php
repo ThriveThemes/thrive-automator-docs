@@ -11,6 +11,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Silence is golden!
 }
 
+use AutomatorExamples\Apps\Example_App;
 use Thrive\Automator\Items\Trigger;
 
 class Stock extends Trigger {
@@ -31,8 +32,8 @@ class Stock extends Trigger {
 		return 1;
 	}
 
-	public static function get_app_name() {
-		return 'WooCommerce';
+	public static function get_app_id() {
+		return Example_App::get_id();
 	}
 
 	public static function get_name() {

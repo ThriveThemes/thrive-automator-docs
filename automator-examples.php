@@ -18,6 +18,7 @@ use AutomatorExamples\ActionFields\General\Url;
 use AutomatorExamples\ActionFields\Ultimatum\CampaignId;
 use AutomatorExamples\Actions\General\Webhook;
 use AutomatorExamples\Actions\Ultimatum\StartCampaign;
+use AutomatorExamples\Apps\Example_App;
 use AutomatorExamples\DataFields\Woocommerce\WooProductStock;
 use AutomatorExamples\Triggers\Woocommerce\Stock;
 
@@ -29,6 +30,7 @@ require plugin_dir_path( __FILE__ ) . 'vendor/autoload.php';
 
 add_action( 'thrive_automator_init', static function () {
 
+	thrive_automator_register_app( Example_App::class );
 	/* "Webhook" action registration */
 	thrive_automator_register_action_field( Url::class );
 	thrive_automator_register_action( Webhook::class );

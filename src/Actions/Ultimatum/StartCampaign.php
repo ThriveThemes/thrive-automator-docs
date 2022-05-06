@@ -7,7 +7,7 @@
 
 namespace AutomatorExamples\Actions\Ultimatum;
 
-use function Thrive\Automator\tap_logger;
+use AutomatorExamples\Apps\Example_App;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Silence is golden!
@@ -31,8 +31,8 @@ class StartCampaign extends \Thrive\Automator\Items\Action {
 		return 'https://thrivethemes.com/wp-content/uploads/2021/08/logo-icon.png';
 	}
 
-	public static function get_app_name() {
-		return 'Thrive Ultimatum';
+	public static function get_app_id() {
+		return Example_App::get_id();
 	}
 
 	/**
